@@ -1,0 +1,71 @@
+/* .product_row1 {
+    width: calc(25% - 20px);
+
+    height: 200px;
+    margin: 10px;
+    line-height: 200px;
+    color: black;
+    font-size: 24px;
+    text-decoration: none;
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+.product_row2 {
+    width: calc(25% - 20px);
+    
+    height: 200px;
+    margin: 10px;
+    line-height: 200px;
+    color: black;
+    font-size: 24px;
+    text-decoration: none;
+    background-size: cover;
+    background-position: center;
+
+} */
+section {
+    width: 1000px;
+    background-color: whitesmoke;
+    margin: 0 auto;
+}
+
+section .products {
+    height: inherit;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* הפרדת האובייקטים בין השורות */
+    width: calc(25% - 20px);
+    /* 25% מרוחב הגוף פחות 20 פיקסלים של מרווח בין האובייקטים */
+    margin: 10px;
+    color: black;
+    font-size: 24px;
+    text-decoration: none;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+section .products .product {
+    max-height: 500px;
+    display: flex;
+    flex:0 0 30%;
+    margin: 10px;
+    flex-direction: column;
+    border: 3px black solid;
+}
+
+section .products .product .img_body {
+    width: inherit;
+    height: 80%;
+   
+}
+
+section .products .product .img_body img {
+    width: 100%;
+    height: 100%;
+}
+
